@@ -8,7 +8,7 @@ import connectDB from './config/db.js';
 const app=express();
 const port=process.env.port ||4000;
 app.use(cors({
-  origin: "*"
+  origin: "https://fabulous-taffy-87913e.netlify.app/" // url from frontend after deploying frontend 
 }));
 connectDB()
 // middleware
