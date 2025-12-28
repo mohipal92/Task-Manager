@@ -7,7 +7,9 @@ import mongoose from 'mongoose';
 import connectDB from './config/db.js';
 const app=express();
 const port=process.env.port ||4000;
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 connectDB()
 // middleware
 app.use(express.json());
